@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bap"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.diu.assingment.ticket">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#163799"
+        android:text="Bus Route"
+        android:textAlignment="center"
+        android:textColor="#d40c0c"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/busroute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="Dhaka To Chuadanga"
+            android:layout_margin="10dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Chuadanga To Dhaka"
+            android:layout_margin="10dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/busroute"
+        android:layout_marginTop="26dp"
+        android:background="?attr/colorAccent"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Bus Name"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/busname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/t2">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="purbasha"
+            android:textAllCaps="true"
+            android:id="@+id/p"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r"
+            android:text="royal express"
+            android:textAllCaps="true"
+            android:layout_margin="10dp"
+            android:background="#4fd408"
+            android:textStyle="bold"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Pesenger info"
+        android:layout_below="@+id/busname"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:background="#8805a3"
+       android:textSize="18sp"
+        android:id="@+id/t3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t3"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="PHONE NUMBER : "
+        android:textColor="#000"
+        android:id="@+id/t4" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/t4"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/t4"
+        android:inputType="number"
+        android:id="@+id/pnumber"
+        android:padding="5dp"/>
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="#22d7a4"
+        android:text="Place order"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/busroute"
+        android:text="DISTANCE :"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/busroute"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:text="300" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/busroute"
+        android:layout_toEndOf="@+id/t4"
+        android:text="KM"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/t4"
+        android:layout_marginTop="15dp"
+        android:text="Seat Type"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="#e7e01f"
+        android:textColor="#000"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/pnumber"
+        android:layout_below="@+id/textView5">
+
+        <RadioButton
+            android:id="@+id/ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AC"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/nonac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NON AC"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/seat"
+        android:layout_alignBottom="@+id/seat"
+        android:layout_alignParentStart="true"
+        android:text="SEAT : "
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type"
+        android:layout_toEndOf="@+id/textView2"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="enter how muuch seat??"/>
+
+</RelativeLayout>
